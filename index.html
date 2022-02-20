@@ -51,10 +51,10 @@
                 <button id="stop_btn">
                     stop
                 </button>
-                <audio id="audio_break" controls allow="autoplay">
+                <audio id="audio_break" controls allow="autoplay" hidden>
                     <source src="audios/break.mp3" type="audio/mpeg">
                 </audio>
-                <audio id="audio_continue" controls allow="autoplay">
+                <audio id="audio_continue" controls allow="autoplay" hidden>
                     <source src="audios/continue.mp3" type="audio/mpeg">
                 </audio>
             </div>
@@ -74,10 +74,10 @@
 
     const AUDIO_TIME_BREAK = 1000 * 2;
     const AUDIO_TIME_CONTINUE = 1000 * 2;
-    // const MAX_BREAK = 1000 * 20;
-    // const MAX_CONTINUE = 1000 * 60 * 20;
-    const MAX_BREAK = 1000 * 5;
-    const MAX_CONTINUE = 1000 * 7;
+    const MAX_BREAK = 1000 * 20;
+    const MAX_CONTINUE = 1000 * 60 * 20;
+    // const MAX_BREAK = 1000 * 5;
+    // const MAX_CONTINUE = 1000 * 7;
 
     document.getElementById("play_btn").addEventListener("click", playOperate);
     document.getElementById("break_btn").addEventListener("click", breakOperate);
